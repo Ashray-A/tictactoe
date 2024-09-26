@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light background color */
+    font-family: Arial, sans-serif; /* Font style */
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columns of 100px each */
+    grid-template-rows: repeat(3, 100px); /* 3 rows of 100px each */
+    gap: 5px; /* Space between cells */
+    margin: 20px; /* Margin around the board */
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 100px; /* Cell width */
+    height: 100px; /* Cell height */
+    background-color: white; /* White background for cells */
+    border: 2px solid #333; /* Dark border for cells */
+    font-size: 24px; /* Font size for markers */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .cell.taken {
+    pointer-events: none; /* Disable clicking on taken cells */
+    background-color: #e0e0e0; /* Light gray background for taken cells */
+  }
+  
+  #player-info {
+    margin: 20px; /* Margin for player info */
+    font-size: 20px; /* Font size for player info */
+  }
+  
+  #restart-btn {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
